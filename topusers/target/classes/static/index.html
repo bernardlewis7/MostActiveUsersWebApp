@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> DEMO APP </title>
+      <meta charset="windows-1252">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="sendRequest.js" type="text/javascript"></script>
+      <script src="displayTable.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <h2>This Demo Web App functions to display List of 5 Users with most numbers of messages and their frequent messages</h2>
+      <h2>Click Get Top Users to do the above operation and see the result in the Table below:</h2>
+      <style>
+         table, th, td {
+         border: 1px solid black;
+         border-collapse: collapse;
+         background-color: #eee;
+         }
+         th, td {
+         padding: 15px;
+         }
+         div {
+         text-align: justify;
+         }
+         p {
+         text-indent: 50px;
+         }
+      </style>
+      <table id="table" border="1px solid black" style="width:100%">
+         <thead>
+            <!-- The Row Number 0 -->
+            <tr>
+               <th >User</th>
+               <th >Number of Messages</th>
+               <th>Frequent Message</th>
+            </tr>
+         </thead>
+         <tbody>
+         </tbody>
+         <!-- End Row Number 0 -->
+      </table>
+   </body>
+   <button onclick="sendRequestToServer()" id="actionBtn">Get Top Users</button>
+</html>
